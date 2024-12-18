@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wydarzenie w sudetach"
+            android:textSize="25dp"
+            android:padding="10dp"
+            android:gravity="center"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="265dp"
+            android:src="@drawable/widok" />
+        <TextView
+            android:id="@+id/likeCounter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0 polubień"
+            android:gravity="right"
+            android:padding="8dp"/>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/addLike"
+                android:layout_width="206dp"
+                android:layout_height="wrap_content"
+                android:text="POLUB"
+                android:background="@color/cyan"
+                />
+            <Button
+                android:id="@+id/removeLike"
+                android:layout_width="206dp"
+                android:layout_height="wrap_content"
+                android:text="USUŃ"
+                android:background="@color/cyan"/>
+        </GridLayout>
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Podaj e-mail:"
+            android:inputType="textEmailAddress"/>
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Podaj hasło:"
+            android:inputType="textPassword"/>
+        <EditText
+            android:id="@+id/repeatPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Powtórz hasło:"
+            android:inputType="textPassword"/>
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ZAPISZ"/>
+        <Button
+            android:id="@+id/seeMember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ZOBACZ UCZESTNIKA"/>
+        <TextView
+            android:id="@+id/response"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Obszar komunikatów"
+            android:layout_gravity="center"
+            android:padding="20dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
