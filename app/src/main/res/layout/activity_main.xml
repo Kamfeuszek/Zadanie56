@@ -38,14 +38,14 @@
                 android:layout_width="206dp"
                 android:layout_height="wrap_content"
                 android:text="POLUB"
-                android:background="@color/cyan"
+                android:backgroundTint="@color/cyan"
                 />
             <Button
                 android:id="@+id/removeLike"
                 android:layout_width="206dp"
                 android:layout_height="wrap_content"
                 android:text="USUŃ"
-                android:background="@color/cyan"/>
+                android:backgroundTint="@color/cyan"/>
         </GridLayout>
         <EditText
             android:id="@+id/email"
